@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+nav {
+    margin-right: 4rem;
+}
+
+.ulNav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    z-index: 9999;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: white;
+}
+
+.liNav img {
+    margin: 2rem 0 2rem 4rem;
+    width: 8rem;
+}
+
+.liNav {
+    margin-right: 2.5rem;
+}
+
+.liNav a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.liNav a:hover {
+    color: #FF5757;
+}
+
+.liNav button {
+    font-size: 1.8rem;
+    font-family: 'Quicksand', sans-serif;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #BDDCF2;
+    border-radius: 0.7rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 2px rgba(53, 53, 53, 0.1);
+}
+
+.liNav button:hover {
+    background-color: #FF5757;
+    color: white;
+}
+
+.liNav:first-child {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.divBanner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.divBanner2 {
+    position: absolute;
+    padding-top: 2.5rem;
+}
+
+.tituloBanner {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 4rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 3.5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+}
+
+.divBanner3 {
+    width: 100%;
+}
+.divBanner3 img {
+    width: 100%;
+}
+
+.divBotonBanner {
+    display: flex;
+    justify-content: center;
+}
+.botonBanner {
+    font-size: 1.8rem;
+    font-family: 'Quicksand', sans-serif;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 0.7rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 2px rgba(53, 53, 53, 0.1);
+    background-color: #BDDCF2;
+    margin-top: 2rem;
+}
+
+.botonBanner:hover {
+    background-color: #FF5757;
+    color: white;
+}
+
+.seccionTrabajamos {
+    margin: 10rem 0 5rem 10rem;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+}
+
+.allCardsTrabajamosPrimeraFila, .allCardsTrabajamosSegundaFila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    opacity: 0;
+}
+
+.divCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35rem;
+    height: 27rem;
+    box-shadow: 5px 5px 10px 5px rgba(53, 53, 53, 0.1);
+    border-radius: 0.7rem;
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+.divCard:hover {
+transform: scale(1.05);
+}
+
+.divContenidos, .divSeo, .divLink {
+    margin-bottom: 0;
+}
+
+.tagCard {
+    position: absolute;
+    top: 7%;
+    left: -5%;
+    background-color: #FF5757;
+    width: 18rem;
+    border-radius: 1rem;
+}
+
+.tagOt {
+width: 28rem;
+}
+
+.tagKey {
+    width: 22rem;
+}
+
+.tagContenidos {
+    width: 31rem;
+}
+
+.tagSeo {
+    width: 16rem;
+}
+
+.tagLink {
+    width: 17rem;
+}
+
+.tituloCard {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.textoCard {
+    padding-top: 7.5rem;
+    text-align: center;
+    margin: 0 3rem 0 3rem;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mostrarCards {
+    animation: mostrarCards 0.7s ease-out;
+}
+@keyframes mostrarCards {
+0% {
+    transform: translateY(50px);
+}
+100% {
+    transform: translateY(0);
+}
+}
+
+.seccionAdn, .seccionQuienes {
+    margin: 10rem 0 0 10rem;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+}
+
+.seccionContacto {
+    margin: 5rem 0 0 0;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: #FF5757;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.divSeccionAdn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+}
+
+.divSeccionAdn img {
+    width: 600px;
+    margin: 0 10rem 0 0;
+}
+
+.divSeccionAdn2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 7rem;
+    opacity: 0;
+}
+
+.divSeccionAdn2 img {
+    width: 600px;
+    margin: 0 0 0 10rem;
+}
+.divSeccionAdn3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 7rem;
+    opacity: 0;
+}
+
+.divSeccionAdn3 img {
+    width: 600px;
+    margin: 0 10rem 0 0;
+}
+
+.divAdn {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0 0 10rem;
+}
+
+.tituloAdn, .tituloFamilia, .tituloAliados, .tituloNecesitamos, .tituloVision {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.textoAdn, .textoFamilia, .textoAliados, .textoNecesitamos, .textoVision {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.divFamilia, .divVision {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0 0 10rem;
+}
+
+.divAliados, .divNecesitamos {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 10rem 0 2rem;
+}
+
+.textoQuienes {
+    margin: 5rem 10rem 0 10rem;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+}
+
+hr {
+    color: gray;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.formContacto {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.labelContacto {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.form-control {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btnEnviar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnForm {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #BDDCF2;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+
+.btnForm:hover {
+    background: #FF5757;
+}
