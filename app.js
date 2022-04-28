@@ -32,6 +32,27 @@ animadoDos.classList.add('mostrarCards');
 }
 window.addEventListener ('scroll', mostrarScrollDos);
 
+let animadoBotonTrafico = document.querySelector('.divBotonTrafico');
+let mostrarScrollBotonTrafico = () => {
+let scrollTopBotonTrafico = document.documentElement.scrollTop;
+let alturaAnimadoBotonTrafico = animadoBotonTrafico.offsetTop;
+if (alturaAnimadoBotonTrafico - 600 < scrollTopBotonTrafico) {
+animadoBotonTrafico.style.opacity = 1;
+animadoBotonTrafico.classList.add('mostrarCards');
+}
+}
+window.addEventListener ('scroll', mostrarScrollBotonTrafico);
+
+let animadoBotonSitio = document.querySelector('.divBotonSitio');
+let mostrarScrollBotonSitio = () => {
+let scrollTopBotonSitio = document.documentElement.scrollTop;
+let alturaAnimadoBotonSitio = animadoBotonSitio.offsetTop;
+if (alturaAnimadoBotonSitio - 500 < scrollTopBotonSitio) {
+animadoBotonSitio.style.opacity = 1;
+animadoBotonSitio.classList.add('mostrarCards');
+}
+}
+window.addEventListener ('scroll', mostrarScrollBotonSitio);
 
 let animadoTituloAdn = document.querySelector('.seccionAdn');
 let mostrarScrollTituloAdn = () => {
@@ -65,17 +86,6 @@ animadoSeccionAdn2.classList.add('mostrarCards');
 }
 }
 window.addEventListener ('scroll', mostrarScrollSeccionAdn2);
-
-let animadoSeccionAdn3= document.querySelector('.divSeccionAdn3');
-let mostrarScrollSeccionAdn3 = () => {
-let scrollTopSeccionAdn3 = document.documentElement.scrollTop;
-let alturaAnimadoSeccionAdn3 = animadoSeccionAdn3.offsetTop;
-if (alturaAnimadoSeccionAdn3 - 500 < scrollTopSeccionAdn3) {
-animadoSeccionAdn3.style.opacity = 1;
-animadoSeccionAdn3.classList.add('mostrarCards');
-}
-}
-window.addEventListener ('scroll', mostrarScrollSeccionAdn3);
 
 let animadoTituloQuienes= document.querySelector('.seccionQuienes');
 let mostrarScrollTituloQuienes = () => {

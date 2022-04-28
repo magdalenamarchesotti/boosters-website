@@ -7,6 +7,10 @@
 
 body {
     scroll-behavior: smooth;
+    background-image: url(IMAGES/cohete-background.svg);
+    background-repeat: no-repeat;
+    background-position: right -10vw top 185vh;
+    z-index: 1;
 }
 
 nav {
@@ -71,11 +75,14 @@ nav {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 52rem;
+    background: url(images/banner-boosters.png) bottom;
 }
 
-.divBanner2 {
+.divBanner3 {
     position: absolute;
-    padding-top: 2.5rem;
+    top: 2rem;
 }
 
 .tituloBanner {
@@ -85,20 +92,19 @@ nav {
     letter-spacing: 0.2rem;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    margin-bottom: 4rem;
 }
 
-h1 {
+.divBanner2 h1 {
     text-align: center;
     font-size: 4rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4rem;
 }
 
-h2 {
+.divBanner2 h2 {
     text-align: center;
     font-size: 2.2rem;
     letter-spacing: 0.2rem;
@@ -107,21 +113,27 @@ h2 {
     font-weight: lighter;
 }
 
-.divBanner3 {
-    width: 100%;
+.divBotonBanner {
+    margin-top: 3rem;
 }
-.divBanner3 img {
+/* .divBanner3 {
     width: 100%;
 }
 
-.divBotonBanner {
+.divBanner3 img {
+    width: 100%;
+} */
+
+.divBotonBanner, .divBotonTrafico, .divBotonSitio {
     display: flex;
     justify-content: center;
 }
-.botonBanner {
-    font-size: 1.8rem;
+
+.botonBanner, .botonTrafico, .botonSitio {
+    font-size: 2.2rem;
     font-family: 'Quicksand', sans-serif;
-    padding: 1rem 2rem 1rem 2rem;
+    font-weight: bold;
+    padding: 1.5rem 3rem 1.5rem 3rem;
     border-radius: 0.7rem;
     border: none;
     cursor: pointer;
@@ -130,7 +142,7 @@ h2 {
     margin-top: 2rem;
 }
 
-.botonBanner:hover {
+.botonBanner:hover, .botonTrafico:hover, .botonSitio:hover {
     background-color: #FF5757;
     color: white;
 }
@@ -165,6 +177,8 @@ h2 {
     border-radius: 0.7rem;
     position: relative;
     margin-bottom: 7rem;
+    z-index: 1000;
+    background-color: white;
 }
 
 .divCard:hover {
@@ -179,7 +193,7 @@ transform: scale(1.05);
     position: absolute;
     top: 7%;
     left: -5%;
-    background-color: #FF5757;
+    background-color: #BDDCF2;
     width: 18rem;
     border-radius: 1rem;
 }
@@ -211,7 +225,7 @@ width: 28rem;
     font-size: 1.6rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
-    color: white;
+    color: black;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -277,12 +291,12 @@ width: 28rem;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 7rem;
+    margin-left: 7.5rem;
     opacity: 0;
 }
 
 .divSeccionAdn2 img {
     width: 600px;
-    margin: 0 0 0 10rem;
 }
 .divSeccionAdn3 {
     display: flex;
@@ -304,8 +318,8 @@ width: 28rem;
     margin: 5rem 0 0 10rem;
 }
 
-.tituloAdn, .tituloFamilia, .tituloAliados, .tituloNecesitamos, .tituloVision {
-    font-size: 2rem;
+.tituloAdn, .tituloFamilia, .tituloVision {
+    font-size: 2.2rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
     color: black;
@@ -313,12 +327,40 @@ width: 28rem;
     margin-bottom: 1.5rem;
 }
 
-.textoAdn, .textoFamilia, .textoAliados, .textoNecesitamos, .textoVision {
-    font-size: 1.8rem;
+.tituloAliados, .tituloNecesitamos {
+    margin-left: 1rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.textoFamilia, .textoVision {
+    font-size: 2rem;
     font-weight: lighter;
     letter-spacing: 0.2rem;
     color: black;
     font-family: 'Quicksand', sans-serif;
+}
+
+.textoAdn {
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: 1rem;
+}
+
+.textoAliados, .textoNecesitamos {
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 1rem;
 }
 
 .divFamilia, .divVision {
@@ -334,7 +376,7 @@ width: 28rem;
 }
 
 .textoQuienes {
-    margin: 5rem 10rem 0 10rem;
+    margin: 5rem 10rem 7rem 10rem;
     font-size: 1.8rem;
     font-weight: lighter;
     letter-spacing: 0.2rem;
@@ -346,13 +388,23 @@ width: 28rem;
 hr {
     color: gray;
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
-.formContacto {
+#contacto {
+    background-image: url(IMAGES/cohete-background-2.svg);
+    background-repeat: no-repeat;
+    background-position: left -10vw bottom 10vh;
+    z-index: 1;
+}
+
+.divFormContacto {
     margin-top: 5rem;
     display: flex;
     justify-content: center;
+}
+.formContacto {
+    width: 40%;
 }
 
 .labelContacto {
@@ -361,6 +413,11 @@ hr {
     letter-spacing: 0.2rem;
     color: black;
     font-family: 'Quicksand', sans-serif;
+}
+
+.asterisco {
+    color: red;
+    font-size: 2rem;
 }
 
 .form-control {
@@ -391,4 +448,40 @@ hr {
 
 .btnForm:hover {
     background: #FF5757;
+}
+
+footer {
+    margin-top: 10rem;
+}
+
+.ulFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    align-items: center;
+    z-index: 9999;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #FF5757;
+}
+
+.ulFooter span {
+    font-size: 2rem;
+    color: white;
+}
+
+.liFooter a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.liFooter a:hover {
+    color: black;
 }
