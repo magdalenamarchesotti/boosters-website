@@ -289,6 +289,7 @@ width: 28rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
     align-items: center;
     margin-top: 7rem;
     margin-left: 7.5rem;
@@ -298,18 +299,13 @@ width: 28rem;
 .divSeccionAdn2 img {
     width: 600px;
 }
-.divSeccionAdn3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 7rem;
-    opacity: 0;
+
+.divSeccionAdn2Img {
+    width: 50%;
 }
 
-.divSeccionAdn3 img {
-    width: 600px;
-    margin: 0 10rem 0 0;
+.divAliadosNecesitamos {
+    width: 50%;
 }
 
 .divAdn {
@@ -328,7 +324,6 @@ width: 28rem;
 }
 
 .tituloAliados, .tituloNecesitamos {
-    margin-left: 1rem;
     font-size: 2.2rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
@@ -360,7 +355,6 @@ width: 28rem;
     letter-spacing: 0.2rem;
     color: black;
     font-family: 'Quicksand', sans-serif;
-    margin-left: 1rem;
 }
 
 .divFamilia, .divVision {
@@ -372,7 +366,7 @@ width: 28rem;
 .divAliados, .divNecesitamos {
     display: flex;
     flex-direction: column;
-    margin: 4rem 10rem 0 2rem;
+    margin: 4rem 10rem 0 0;
 }
 
 .textoQuienes {
@@ -484,4 +478,420 @@ footer {
 
 .liFooter a:hover {
     color: black;
+}
+
+@media only screen and (max-width: 448px) {
+    body {
+        background-image: none;
+    }
+
+    .divBanner {
+        background: url(images/banner-boosters.png) left;
+        height: 37rem;
+    }
+
+    .divBanner2 {
+        margin: 0 1.6rem 0 1.6rem;
+    }
+
+    .divBanner2 h1 {
+        font-size: 1.8rem;
+    }
+
+    .divBanner2 h2 {
+        font-size: 1.4rem;
+    }
+
+    .seccionTrabajamos, .seccionAdn, .seccionQuienes {
+        margin: 8rem 2rem 4rem 2rem;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .divSeccionAdn {
+        flex-direction: column;
+    }
+
+    .divAdn {
+        margin: 0 2rem 4rem 2rem;
+        text-align: center;
+    }
+
+    .divFamilia {
+        margin: 0 2rem 3rem 2rem;
+        text-align: center;
+    }
+
+    .divAliados, .divNecesitamos {
+        text-align: center;
+        margin: 0;
+    }
+
+    .divNecesitamos {
+        margin: 4rem 0 3rem 0;
+    }
+
+    .divSeccionAdn2 {
+        margin: 6rem 2rem 0 2rem;
+    }
+
+    .divSeccionAdn2Img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .divAliadosNecesitamos {
+        width: 100%;
+    }
+
+    .divSeccionAdn img, .divSeccionAdn2 img {
+        margin: 0;
+        width: 30rem;
+    }
+
+    .tituloAdn, .tituloAliados, .tituloFamilia, .tituloNecesitamos {
+        font-size: 1.8rem;
+    }
+
+    .textoAdn, .textoAliados, .textoFamilia, .textoNecesitamos {
+        font-size: 1.6rem;
+    }
+
+    .textoAliados, .textoNecesitamos {
+        margin: 0;
+    }
+
+    .textoQuienes {
+        margin: 0 2rem 0 2rem;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .formContacto {
+        width: 70%;
+    }
+
+    #contacto {
+        background-image: none;
+    }
+
+    .btnForm {
+        width: 100%;
+    }
+
+    .botonBanner, .botonTrafico, .botonSitio {
+        font-size: 1.8rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        padding: 1.3rem 2.8rem 1.3rem 2.8rem;
+        border-radius: 0.7rem;
+        border: none;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px 2px rgba(53, 53, 53, 0.1);
+        background-color: #BDDCF2;
+        margin-top: 2rem;
+    }
+
+    .card1, .card2, .card3 {
+        width: 32rem;
+        height: 23.5rem;
+    }
+
+    .card4, .card5 {
+        width: 32rem;
+        height: 22.5rem;
+    }
+
+    .card6 {
+        width: 32rem;
+        height: 26rem;
+    }
+
+    .textoCard {
+        padding-top: 6.3rem;
+        margin: 0 2rem 0 2rem;
+    }
+
+    .liFooter a {
+        font-size: 1.4rem;
+    }
+
+    .liFooter {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 449px) and (max-width: 467px) {
+    body {
+        background-image: none;
+    }
+
+    .divBanner {
+        background: url(images/banner-boosters.png) left;
+        height: 37rem;
+    }
+
+    .divBanner2 {
+        margin: 0 2rem 0 2rem;
+    }
+
+    .divBanner2 h1 {
+        font-size: 2.2rem;
+    }
+
+    .divBanner2 h2 {
+        font-size: 1.7rem;
+    }
+
+    .seccionTrabajamos, .seccionAdn, .seccionQuienes {
+        margin: 8rem 2rem 4rem 2rem;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .divSeccionAdn {
+        flex-direction: column;
+    }
+
+    .divAdn {
+        margin: 0 2rem 4rem 2rem;
+        text-align: center;
+    }
+
+    .divFamilia {
+        margin: 0 2rem 3rem 2rem;
+        text-align: center;
+    }
+
+    .divAliados, .divNecesitamos {
+        text-align: center;
+        margin: 0;
+    }
+
+    .divNecesitamos {
+        margin: 4rem 0 3rem 0;
+    }
+
+    .divSeccionAdn2 {
+        margin: 6rem 2rem 0 2rem;
+    }
+
+    .divSeccionAdn2Img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .divAliadosNecesitamos {
+        width: 100%;
+    }
+
+    .divSeccionAdn img, .divSeccionAdn2 img {
+        margin: 0;
+        width: 30rem;
+    }
+
+    .tituloAdn, .tituloAliados, .tituloFamilia, .tituloNecesitamos {
+        font-size: 1.8rem;
+    }
+
+    .textoAdn, .textoAliados, .textoFamilia, .textoNecesitamos {
+        font-size: 1.6rem;
+    }
+
+    .textoAliados, .textoNecesitamos {
+        margin: 0;
+    }
+
+    .textoQuienes {
+        margin: 0 2rem 0 2rem;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .formContacto {
+        width: 70%;
+    }
+
+    #contacto {
+        background-image: none;
+    }
+
+    .btnForm {
+        width: 100%;
+    }
+
+    .botonBanner, .botonTrafico, .botonSitio {
+        font-size: 1.8rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        padding: 1.3rem 2.8rem 1.3rem 2.8rem;
+        border-radius: 0.7rem;
+        border: none;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px 2px rgba(53, 53, 53, 0.1);
+        background-color: #BDDCF2;
+        margin-top: 2rem;
+    }
+
+    .card1, .card2, .card3 {
+        width: 35rem;
+        height: 23.5rem;
+    }
+
+    .card4, .card5 {
+        width: 35rem;
+        height: 21.5rem;
+    }
+
+    .card6 {
+        width: 35rem;
+        height: 26.5rem;
+    }
+
+    .textoCard {
+        padding-top: 6.3rem;
+        margin: 0 2rem 0 2rem;
+    }
+}
+
+@media only screen and (min-width: 468px) and (max-width: 480px) {
+    body {
+        background-image: none;
+    }
+
+    .divBanner {
+        background: url(images/banner-boosters.png) left;
+        height: 40rem;
+    }
+
+    .divBanner2 {
+        margin: 0 2rem 0 2rem;
+    }
+
+    .divBanner2 h1 {
+        font-size: 2.4rem;
+    }
+
+    .divBanner2 h2 {
+        font-size: 1.8rem;
+    }
+
+    .seccionTrabajamos, .seccionAdn, .seccionQuienes {
+        margin: 8rem 2rem 4rem 2rem;
+        text-align: center;
+        font-size: 2.4rem;
+    }
+
+    .divSeccionAdn {
+        flex-direction: column;
+    }
+
+    .divAdn {
+        margin: 0 2rem 4rem 2rem;
+        text-align: center;
+    }
+
+    .divFamilia {
+        margin: 0 2rem 3rem 2rem;
+        text-align: center;
+    }
+
+    .divAliados, .divNecesitamos {
+        text-align: center;
+        margin: 0;
+    }
+
+    .divNecesitamos {
+        margin: 4rem 0 3rem 0;
+    }
+
+    .divSeccionAdn2 {
+        margin: 6rem 2rem 0 2rem;
+    }
+
+    .divSeccionAdn2Img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .divAliadosNecesitamos {
+        width: 100%;
+    }
+
+    .divSeccionAdn img, .divSeccionAdn2 img {
+        margin: 0;
+        width: 30rem;
+    }
+
+    .tituloAdn, .tituloAliados, .tituloFamilia, .tituloNecesitamos {
+        font-size: 1.8rem;
+    }
+
+    .textoAdn, .textoAliados, .textoFamilia, .textoNecesitamos {
+        font-size: 1.6rem;
+    }
+
+    .textoAliados, .textoNecesitamos {
+        margin: 0;
+    }
+
+    .textoQuienes {
+        margin: 0 2rem 0 2rem;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .formContacto {
+        width: 70%;
+    }
+
+    #contacto {
+        background-image: none;
+    }
+
+    .btnForm {
+        width: 100%;
+    }
+
+    .botonBanner, .botonTrafico, .botonSitio {
+        font-size: 1.8rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        padding: 1.3rem 2.8rem 1.3rem 2.8rem;
+        border-radius: 0.7rem;
+        border: none;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px 2px rgba(53, 53, 53, 0.1);
+        background-color: #BDDCF2;
+        margin-top: 2rem;
+    }
+
+    .card1, .card2, .card3 {
+        width: 35rem;
+        height: 23.5rem;
+    }
+
+    .card4, .card5 {
+        width: 35rem;
+        height: 21.5rem;
+    }
+
+    .card6 {
+        width: 35rem;
+        height: 26.5rem;
+    }
+
+    .textoCard {
+        padding-top: 6.3rem;
+        margin: 0 2rem 0 2rem;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  
+
 }
