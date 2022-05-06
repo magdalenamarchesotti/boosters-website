@@ -497,6 +497,40 @@ footer {
     color: black;
 }
 
+.mensajeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensajeContainer h4 {
+    font-size: 2.2rem;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 25rem;
+    margin-bottom: 2rem;
+}
+
+.mensajeContainer a {
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mensajeContainer a:hover {
+    color: #FF5757;
+}
+
+.bodyForm {
+    background-image: url(./IMAGES/cohete-background-form.svg), url(./IMAGES/cohete-background-form-2.svg);
+    background-repeat: no-repeat;
+    background-position: right -125px top 25px, left -125px bottom -400px;
+    background-color: #BDDCF2;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 448px) {
