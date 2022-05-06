@@ -17,6 +17,10 @@ nav {
     margin-right: 4rem;
 }
 
+.divLogoResponsive {
+    display: none;
+}
+
 .ulNav {
     width: 100%;
     display: flex;
@@ -61,6 +65,7 @@ nav {
     box-shadow: 5px 5px 5px 2px rgba(53, 53, 53, 0.1);
 }
 
+
 .liNav button:hover {
     background-color: #FF5757;
     color: white;
@@ -69,6 +74,25 @@ nav {
 .liNav:first-child {
     margin-right: auto;
     margin-left: 0;
+}
+
+.botonResponsive {
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.br1, .br2, .br3 {
+    display: block;
+    background: #000;
+    height: 0.3rem;
+    width: 3rem;
+    margin: 1rem auto;
+    border-radius: 0.2rem;
+
 }
 
 .divBanner {
@@ -116,13 +140,6 @@ nav {
 .divBotonBanner {
     margin-top: 3rem;
 }
-/* .divBanner3 {
-    width: 100%;
-}
-
-.divBanner3 img {
-    width: 100%;
-} */
 
 .divBotonBanner, .divBotonTrafico, .divBotonSitio {
     display: flex;
@@ -480,9 +497,74 @@ footer {
     color: black;
 }
 
+/* Media queries */
+
 @media only screen and (max-width: 448px) {
     body {
         background-image: none;
+    }
+
+    .ulNav {
+        display: none;
+        flex-direction: column;
+        opacity: 0;
+    }
+
+    @keyframes mostrarResponsive {
+        from {
+            opacity: 0;
+        } to {
+            opacity: 1;
+        }
+    }
+
+    .liNav {
+        margin-bottom: 2rem;
+    }
+
+    .liNav:first-child {
+        margin-bottom: 0;
+    }
+
+    nav {
+        margin-right: 0;
+    }
+
+    .divLogoResponsive {
+        display: block;
+    }
+
+    .divLogoResponsive img {
+        width: 6rem;
+        margin: 1rem 0 1rem 2rem;
+    }
+
+    .ulNav.activado {
+        display: flex;
+        animation: mostrarResponsive 500ms ease-in-out both;
+    }
+
+    .br1.animado {
+        transform: rotate(-45deg) translate(-1rem, 0.8rem);
+    }
+
+    .br2.animado {
+        opacity: 0;
+    }
+
+    .br3.animado {
+        transform: rotate(45deg) translate(-1rem, -0.8rem);
+    }
+
+    .liNav img {
+        display: none;
+    }
+
+    .botonResponsive {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2.5rem;
     }
 
     .divBanner {
@@ -627,6 +709,69 @@ footer {
         background-image: none;
     }
 
+    .ulNav {
+        display: none;
+        flex-direction: column;
+        opacity: 0;
+    }
+
+    @keyframes mostrarResponsive {
+        from {
+            opacity: 0;
+        } to {
+            opacity: 1;
+        }
+    }
+
+    .liNav {
+        margin-bottom: 2rem;
+    }
+
+    .liNav:first-child {
+        margin-bottom: 0;
+    }
+
+    nav {
+        margin-right: 0;
+    }
+
+    .divLogoResponsive {
+        display: block;
+    }
+
+    .divLogoResponsive img {
+        width: 6rem;
+        margin: 1rem 0 1rem 2rem;
+    }
+
+    .ulNav.activado {
+        display: flex;
+        animation: mostrarResponsive 500ms ease-in-out both;
+    }
+
+    .br1.animado {
+        transform: rotate(-45deg) translate(-1rem, 0.8rem);
+    }
+
+    .br2.animado {
+        opacity: 0;
+    }
+
+    .br3.animado {
+        transform: rotate(45deg) translate(-1rem, -0.8rem);
+    }
+
+    .liNav img {
+        display: none;
+    }
+
+    .botonResponsive {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2.5rem;
+    }
+
     .divBanner {
         background: url(images/banner-boosters.png) left;
         height: 37rem;
@@ -756,9 +901,72 @@ footer {
     }
 }
 
-@media only screen and (min-width: 468px) and (max-width: 480px) {
+@media only screen and (min-width: 468px) and (max-width: 799px) {
     body {
         background-image: none;
+    }
+
+    .ulNav {
+        display: none;
+        flex-direction: column;
+        opacity: 0;
+    }
+
+    @keyframes mostrarResponsive {
+        from {
+            opacity: 0;
+        } to {
+            opacity: 1;
+        }
+    }
+
+    .liNav {
+        margin-bottom: 2rem;
+    }
+
+    .liNav:first-child {
+        margin-bottom: 0;
+    }
+
+    nav {
+        margin-right: 0;
+    }
+
+    .divLogoResponsive {
+        display: block;
+    }
+
+    .divLogoResponsive img {
+        width: 6rem;
+        margin: 1rem 0 1rem 2rem;
+    }
+
+    .ulNav.activado {
+        display: flex;
+        animation: mostrarResponsive 500ms ease-in-out both;
+    }
+
+    .br1.animado {
+        transform: rotate(-45deg) translate(-1rem, 0.8rem);
+    }
+
+    .br2.animado {
+        opacity: 0;
+    }
+
+    .br3.animado {
+        transform: rotate(45deg) translate(-1rem, -0.8rem);
+    }
+
+    .liNav img {
+        display: none;
+    }
+
+    .botonResponsive {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2.5rem;
     }
 
     .divBanner {
@@ -891,7 +1099,309 @@ footer {
 }
 
 /* Tablet */
-@media only screen and (min-width: 481px) and (max-width: 960px) {
-  
+/* hasta esta MQ incluida va el menu hamburguesa */
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
 
+        body {
+            background-image: none;
+        }
+
+        .ulNav {
+            display: none;
+            flex-direction: column;
+            opacity: 0;
+        }
+    
+        @keyframes mostrarResponsive {
+            from {
+                opacity: 0;
+            } to {
+                opacity: 1;
+            }
+        }
+    
+        .liNav {
+            margin-bottom: 2rem;
+        }
+    
+        .liNav:first-child {
+            margin-bottom: 0;
+        }
+    
+        nav {
+            margin-right: 0;
+        }
+    
+        .divLogoResponsive {
+            display: block;
+        }
+    
+        .divLogoResponsive img {
+            width: 6rem;
+            margin: 1rem 0 1rem 2rem;
+        }
+    
+        .ulNav.activado {
+            display: flex;
+            animation: mostrarResponsive 500ms ease-in-out both;
+        }
+    
+        .br1.animado {
+            transform: rotate(-45deg) translate(-1rem, 0.8rem);
+        }
+    
+        .br2.animado {
+            opacity: 0;
+        }
+    
+        .br3.animado {
+            transform: rotate(45deg) translate(-1rem, -0.8rem);
+        }
+    
+        .liNav img {
+            display: none;
+        }
+    
+        .botonResponsive {
+            display: block;
+            position: absolute;
+            top: 2rem;
+            right: 2.5rem;
+        }
+    
+        .divBanner {
+            background: url(images/banner-boosters.png) bottom;
+            height: 40rem;
+        }
+    
+        .divBanner2 {
+            margin: 0 2rem 0 2rem;
+        }
+    
+        .divBanner2 h1 {
+            font-size: 2.4rem;
+        }
+    
+        .divBanner2 h2 {
+            font-size: 1.8rem;
+        }
+    
+        .seccionTrabajamos, .seccionAdn, .seccionQuienes {
+            margin: 8rem 2rem 4rem 2rem;
+            text-align: center;
+            font-size: 2.4rem;
+        }
+    
+        .divSeccionAdn {
+            flex-direction: column;
+        }
+    
+        .divAdn {
+            margin: 0 2rem 4rem 2rem;
+            text-align: center;
+        }
+    
+        .divFamilia {
+            margin: 0 2rem 3rem 2rem;
+            text-align: center;
+        }
+    
+        .divAliados, .divNecesitamos {
+            text-align: center;
+            margin: 0;
+        }
+    
+        .divNecesitamos {
+            margin: 4rem 0 3rem 0;
+        }
+    
+        .divSeccionAdn2 {
+            margin: 6rem 2rem 0 2rem;
+        }
+    
+        .divSeccionAdn2Img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .divAliadosNecesitamos {
+            width: 100%;
+        }
+    
+        .divSeccionAdn img, .divSeccionAdn2 img {
+            margin: 0;
+            width: 40rem;
+        }
+    
+        .tituloAdn, .tituloAliados, .tituloFamilia, .tituloNecesitamos {
+            font-size: 1.8rem;
+        }
+    
+        .textoAdn, .textoAliados, .textoFamilia, .textoNecesitamos {
+            font-size: 1.6rem;
+        }
+    
+        .textoAliados, .textoNecesitamos {
+            margin: 0;
+        }
+    
+        .textoQuienes {
+            margin: 0 2rem 0 2rem;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+    
+        .formContacto {
+            width: 70%;
+        }
+    
+        #contacto {
+            background-image: none;
+        }
+    
+        .btnForm {
+            width: 100%;
+        }
+    
+        .botonBanner, .botonTrafico, .botonSitio {
+            font-size: 1.8rem;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            padding: 1.3rem 2.8rem 1.3rem 2.8rem;
+            border-radius: 0.7rem;
+            border: none;
+            cursor: pointer;
+            box-shadow: 5px 5px 5px 2px rgba(53, 53, 53, 0.1);
+            background-color: #BDDCF2;
+            margin-top: 2rem;
+        }
+    
+        .card1, .card2, .card3 {
+            width: 32rem;
+            height: 25rem;
+        }
+    
+        .card4, .card5 {
+            width: 32rem;
+            height: 23rem;
+        }
+    
+        .card6 {
+            width: 32rem;
+            height: 26rem;
+        }
+    
+        .textoCard {
+            padding-top: 6.3rem;
+            margin: 0 2rem 0 2rem;
+        } 
 }
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    body {
+        background-image: none;
+    }
+
+    .divBanner {
+        background: url(images/banner-boosters.png) bottom;
+        height: 40rem;
+    }
+
+    .divBanner2 {
+        margin: 0 2rem 0 2rem;
+    }
+
+    .divBanner2 h1 {
+        font-size: 2.8rem;
+    }
+
+    .divBanner2 h2 {
+        font-size: 2.2rem;
+    }
+
+    .seccionTrabajamos, .seccionAdn, .seccionQuienes {
+        margin: 8rem 2rem 4rem 7rem;
+        font-size: 2.4rem;
+    }
+
+
+    .divAliados, .divNecesitamos {
+        margin: 0;
+    }
+
+    .divAliadosNecesitamos {
+        margin-right: 7rem;
+    }
+
+    .divNecesitamos {
+        margin: 4rem 0 3rem 0;
+    }
+
+    .divSeccionAdn2 {
+        flex-wrap: nowrap;
+    }
+
+    .divSeccionAdn2Img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .divSeccionAdn img, .divSeccionAdn2 img {
+        margin-right: 7rem;
+        width: 45rem;
+    }
+
+    .tituloAdn, .tituloAliados, .tituloFamilia, .tituloNecesitamos {
+        font-size: 1.8rem;
+    }
+
+    .textoAdn, .textoAliados, .textoFamilia, .textoNecesitamos {
+        font-size: 1.6rem;
+    }
+
+    .textoAliados, .textoNecesitamos {
+        margin: 0;
+    }
+
+    .textoQuienes {
+        margin: 0 7rem 0 7rem;
+        font-size: 1.6rem;
+    }
+
+    .formContacto {
+        width: 50%;
+    }
+
+    .botonBanner, .botonTrafico, .botonSitio {
+        font-size: 1.8rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        padding: 1.3rem 2.8rem 1.3rem 2.8rem;
+        border-radius: 0.7rem;
+        border: none;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px 2px rgba(53, 53, 53, 0.1);
+        background-color: #BDDCF2;
+        margin-top: 2rem;
+    }
+
+    .card1, .card2, .card3 {
+        width: 32rem;
+        height: 25rem;
+    }
+
+    .card4, .card5, .card6 {
+        width: 32rem;
+        height: 26rem;
+    }
+
+    .textoCard {
+        padding-top: 6.3rem;
+        margin: 0 2rem 0 2rem;
+    } 
+}
+
+

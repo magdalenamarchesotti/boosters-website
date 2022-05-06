@@ -109,3 +109,11 @@ animadoSeccionQuienes.classList.add('mostrarCards');
 }
 window.addEventListener ('scroll', mostrarScrollSeccionQuienes);
 
+let botonResponsive = document.querySelector('.botonResponsive')
+let ulNavResponsive = document.querySelector('.ulNav')
+let barrasResponsive = document.querySelectorAll('.botonResponsive span')
+
+botonResponsive.addEventListener('click', () => {
+    ulNavResponsive.classList.toggle('activado')
+    barrasResponsive.forEach (barra => {barra.classList.toggle('animado')})
+})
