@@ -534,6 +534,15 @@ footer {
 /* Media queries */
 
 @media only screen and (max-width: 448px) {
+
+    .bodyForm {
+        background-image: none;
+    }
+
+    .mensajeContainer {
+        text-align: center;
+    }
+
     body {
         background-image: none;
     }
@@ -739,6 +748,15 @@ footer {
 }
 
 @media only screen and (min-width: 449px) and (max-width: 467px) {
+
+    .bodyForm {
+        background-image: none;
+    }
+
+    .mensajeContainer {
+        text-align: center;
+    }
+
     body {
         background-image: none;
     }
@@ -936,6 +954,15 @@ footer {
 }
 
 @media only screen and (min-width: 468px) and (max-width: 799px) {
+
+    .bodyForm {
+        background-image: none;
+    }
+
+    .mensajeContainer {
+        text-align: center;
+    }
+
     body {
         background-image: none;
     }
@@ -1136,6 +1163,14 @@ footer {
 /* hasta esta MQ incluida va el menu hamburguesa */
 @media only screen and (min-width: 800px) and (max-width: 1023px) {
 
+    .bodyForm {
+        background-position: right -155px top -77px, left -125px bottom -320px;
+    }
+
+    .mensajeContainer {
+        text-align: center;
+    }
+
         body {
             background-image: none;
         }
@@ -1334,6 +1369,14 @@ footer {
 
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    .bodyForm {
+        background-position: right -155px top -77px, left -125px bottom -320px;
+    }
+
+    .mensajeContainer {
+        text-align: center;
+    }
 
     body {
         background-image: none;
