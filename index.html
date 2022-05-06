@@ -157,31 +157,33 @@
         <section id="contacto">
             <p class="seccionContacto">¡Sigamos en contacto!</p>
             <div class="divFormContacto">
+
+
                 <form action="envioform.php" method="post" class="row g-4 formContacto">
                 <div class="col-md-12">
                     <label for="inputEmail4" class="labelContacto"
                       >Nombre<span class="asterisco">*</span></label>
-                    <input type="nombre" class="form-control" id="input-contact" />
+                    <input type="text" name="nombre" required="required" class="form-control" id="input-contact" />
                   </div>
                   <div class="col-md-12">
                     <label for="inputemail4" class="labelContacto"
                       >Correo electrónico<span class="asterisco">*</span></label>
-                    <input type="mail" class="form-control" id="input-contact" />
+                    <input type="email" name="email" required="required" class="form-control" id="input-contact" />
                   </div>
                   <div class="col-md-12">
                     <label for="inputemail4" class="labelContacto"
                       >Sitio Web</label>
-                    <input type="website" class="form-control" id="input-contact" />
+                    <input type="text" name="website" class="form-control" id="input-contact" />
                   </div>
                   <div class="col-md-12">
                     <label for="inputemail4" class="labelContacto"
                       >País</label>
-                    <input type="pais" class="form-control" id="input-contact" />
+                    <input type="text" name="pais" class="form-control" id="input-contact" />
                   </div>
                   <div class="col-md-12">
                       <label for="inputemail4" class="labelContacto"
                       >Escribinos tu mensaje!<span class="asterisco">*</span></label>
-                      <textarea type="mensaje" class="form-control" id="formMensaje"></textarea>
+                      <textarea type="mensaje" name="mensaje" required="required" class="form-control" id="formMensaje"></textarea>
                   </div>
                   <div class="col-12 btnEnviar">
                     <button type="submit" class="btnForm btn-primary">Enviar</button>

@@ -1,14 +1,26 @@
-<?php 
+<?php
 $nombre = $_POST['nombre'];
-$mail = $_POST['mail'];
+$mail = $_POST['email'];
 $website = $_POST['website'];
 $pais = $_POST['pais'];
-$mensaje = $_POST['mensaje'];
+$textarea = $_POST['mensaje'];
 
-echo "<h2>informacion recibida desde php</h2>";
-echo "el nombre recibido es: " .$nombre. "</br>";
-echo "el mail recibido es: " .$mail. "</br>";
-echo "el sitio recibido es: " .$website. "</br>";
-echo "el pais recibido es: " .$pais. "</br>";
-echo "el mensaje recibido es: " .$mensaje. "</br>";
+$header = 'From: ' . $mail . " \r\n";
+$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
+$header .= "Mime-Version: 1.0 \r\n";
+$header .= "Content-Type: text/plain";
+
+$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
+$mensaje .= "Su e-mail es: " . $mail . " \r\n";
+$mensaje .= "Su website es: " . $website . " \r\n";
+$mensaje .= "Su pais es: " . $pais . " \r\n";
+$mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
+$mensaje .= "Enviado el " . date('d/m/Y', time());
+
+$para = 'magdalenamarchesotti@gmail.com';
+$asunto = 'Mensaje de mi sitio web';
+
+mail($para, $asunto, utf8_decode($mensaje), $header);
+
+header("Location:index.html");
 ?>
