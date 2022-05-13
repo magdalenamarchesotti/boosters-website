@@ -7,7 +7,7 @@
 
 body {
     scroll-behavior: smooth;
-    background-image: url(IMAGES/cohete-background.svg);
+    background-image: url(./IMAGES/cohete-background.svg);
     background-repeat: no-repeat;
     background-position: right -10vw top 185vh;
     z-index: 1;
@@ -101,7 +101,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 52rem;
-    background: url(images/banner-boosters.png) bottom;
+    background: url(./images/banner-boosters.png) bottom;
 }
 
 .divBanner3 {
@@ -403,7 +403,7 @@ hr {
 }
 
 #contacto {
-    background-image: url(IMAGES/cohete-background-2.svg);
+    background-image: url(./IMAGES/cohete-background-2.svg);
     background-repeat: no-repeat;
     background-position: left -10vw bottom 10vh;
     z-index: 1;
@@ -531,6 +531,21 @@ footer {
     background-color: #BDDCF2;
 }
 
+.divDesarrolladoPor {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.divDesarrolladoPor p, .divDesarrolladoPor a {
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.divDesarrolladoPor a:hover {
+    color: #FF5757;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 448px) {
@@ -611,7 +626,7 @@ footer {
     }
 
     .divBanner {
-        background: url(images/banner-boosters.png) left;
+        background: url(./images/banner-boosters.png) left;
         height: 37rem;
     }
 
@@ -825,7 +840,7 @@ footer {
     }
 
     .divBanner {
-        background: url(images/banner-boosters.png) left;
+        background: url(./images/banner-boosters.png) left;
         height: 37rem;
     }
 
@@ -1031,7 +1046,7 @@ footer {
     }
 
     .divBanner {
-        background: url(images/banner-boosters.png) left;
+        background: url(./images/banner-boosters.png) left;
         height: 40rem;
     }
 
@@ -1239,7 +1254,7 @@ footer {
         }
     
         .divBanner {
-            background: url(images/banner-boosters.png) bottom;
+            background: url(./images/banner-boosters.png) bottom;
             height: 40rem;
         }
     
@@ -1383,7 +1398,7 @@ footer {
     }
 
     .divBanner {
-        background: url(images/banner-boosters.png) bottom;
+        background: url(./images/banner-boosters.png) bottom;
         height: 40rem;
     }
 
