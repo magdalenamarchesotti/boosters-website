@@ -146,6 +146,10 @@ nav {
     justify-content: center;
 }
 
+.divBotonBanner a, .divBotonTrafico a, .divBotonSitio a {
+    text-decoration: none;
+}
+
 .botonBanner, .botonTrafico, .botonSitio {
     font-size: 2.2rem;
     font-family: 'Quicksand', sans-serif;
