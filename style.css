@@ -7,7 +7,7 @@
 
 body {
     scroll-behavior: smooth;
-    background-image: url(./IMAGES/cohete-background.svg);
+    background-image: url(./images/cohete-background.svg);
     background-repeat: no-repeat;
     background-position: right -10vw top 185vh;
     z-index: 1;
@@ -407,7 +407,7 @@ hr {
 }
 
 #contacto {
-    background-image: url(./IMAGES/cohete-background-2.svg);
+    background-image: url(./images/cohete-background-2.svg);
     background-repeat: no-repeat;
     background-position: left -10vw bottom 10vh;
     z-index: 1;
@@ -529,7 +529,7 @@ footer {
 }
 
 .bodyForm {
-    background-image: url(./IMAGES/cohete-background-form.svg), url(./IMAGES/cohete-background-form-2.svg);
+    background-image: url(./images/cohete-background-form.svg), url(./images/cohete-background-form-2.svg);
     background-repeat: no-repeat;
     background-position: right -125px top 25px, left -125px bottom -400px;
     background-color: #BDDCF2;
