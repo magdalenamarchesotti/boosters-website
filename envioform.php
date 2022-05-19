@@ -17,7 +17,7 @@ $mensaje .= "Su pais es: " . $pais . " \r\n";
 $mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'contact@seoboosters.la';
+$para = 'agustin@seoboosters.la';
 $asunto = 'Mensaje de mi sitio web';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
